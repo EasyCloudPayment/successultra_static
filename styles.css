@@ -1,0 +1,141 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --brand: #4f46e5;
+  --brand-dark: #3730a3;
+  --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover { color: var(--brand); }
+
+.hero {
+  padding: 5rem 0 4rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.3rem 0 0.8rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.2;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: var(--brand);
+  color: #fff;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.btn:hover { background: var(--brand-dark); }
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-alt {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.contact-form {
+  max-width: 420px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.status {
+  min-height: 1.4rem;
+  margin-top: 0.8rem;
+  color: #166534;
+  font-weight: 600;
+}
+
+.site-footer {
+  padding: 1.8rem 0;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+}
