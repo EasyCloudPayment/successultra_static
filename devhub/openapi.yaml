@@ -3,11 +3,6 @@ info:
   title: Switch Participant API
   version: 0.7.0
   description: Switch Participant API.
-servers:
-- url: https://switch.success-ultra.com
-  description: Production
-- url: https://d2.switchdev3.com
-  description: Sandbox
 tags:
 - name: Participant
   description: Active participants available for a payment flow.
@@ -4128,7 +4123,7 @@ components:
           pattern: ^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$
           description: Omitted for ACCEPTED. REJECTED contains a business refusal reason. FAILED contains duplicate-message,
             unexpected-message or processing-failed; the bank must replay the original business result when known. Technical
-            reasons must not be reported as REJECTED. Vocabulary is documented at https://easya2a.atlassian.net/wiki/spaces/Switch/pages/1068826625/27.10.2026.
+            reasons must not be reported as REJECTED.
         creditorAgentId:
           type: string
           minLength: 1
@@ -4685,8 +4680,7 @@ components:
           type: string
           pattern: ^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$
           description: Omitted for VERIFIED. NOT_VERIFIED contains a business reason, including creditor-consent-not-given
-            when consent was not provided. FAILED contains duplicate-message, unexpected-message or processing-failed. Vocabulary
-            is documented at https://easya2a.atlassian.net/wiki/spaces/Switch/pages/1068826625/27.10.2026.
+            when consent was not provided. FAILED contains duplicate-message, unexpected-message or processing-failed.
         debtor:
           $ref: '#/components/schemas/IdentityVerificationParty'
         creditor:
@@ -5831,7 +5825,7 @@ components:
         currency:
           type: string
           description: Currency (ISO 4217)
-          example: RUB
+          example: UGX
         purpose:
           type: string
           description: Payment purpose
@@ -6146,7 +6140,7 @@ components:
         currency:
           type: string
           description: Currency (ISO 4217)
-          example: RUB
+          example: UGX
         purpose:
           type: string
           description: Payment purpose
