@@ -1,0 +1,3 @@
+Generated files: Switch Participant API documentation.
+Source: https://github.com/EasyCloudPayment/web-openapi-public (master, build of 62057ba)
+To update: npm run build in web-openapi-public, then copy dist/{index.html,assets,openapi.json,openapi.yaml,company-logo.webp,favicon.png} here.
